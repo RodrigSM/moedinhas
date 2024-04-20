@@ -1,0 +1,7 @@
+{
+  "name": "moedinhas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
