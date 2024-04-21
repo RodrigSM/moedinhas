@@ -1,0 +1,72 @@
+ion-content {
+  #img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  h1 {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: rgba(0, 0, 0, 0.85);
+    text-transform: uppercase;
+  }
+
+  ion-item,
+  ion-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: 0.2px;
+    color: rgba(0, 0, 0, 0.79);
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  .content p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .button {
+    --background: rgba(238, 42, 45, 0.6);
+    --border-radius: 15px;
+    --background-activated: rgba(238, 42, 45, 0.6);
+    --background-focused: rgba(238, 42, 45, 0.6);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ededed;
+    margin-top: 10px;
+  }
+
+  .twobuttons {
+    margin-top: 50px;
+  }
+
+  #listone {
+    --border-color: transparent;
+  }
+
+  .labelone {
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-buttons slot="end">
+      <ion-back-button color="test"></ion-back-button>
+    </ion-buttons> -->
+
+    <ion-buttons slot="start">
+      <ion-back-button color="test"></ion-back-button>
+    </ion-buttons>
+    <ion-title *ngIf="infoMoeda">{{infoMoeda.UserColecionador}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="infoMoeda">
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+  <header>
+    <!-- <img src="./assets/component.png" alt="" /> -->
+  </header>
+
+  <h1>{{infoMoeda.NomeColecionador}}</h1>
+
+  <!-- <img id="img" src="./assets/{{infoMoeda.imagem}}" /> -->
+
+  <div class="content">
+    <ion-item id="listone" class="list">
+      <ng-container
+        *ngIf="infoMoeda.Preco; then price; else type_transaction"
+      ></ng-container>
+      <ng-template #price>
+        <ion-label class="labelone">{{infoMoeda.Preco}}€</ion-label>
+      </ng-template>
+      <ng-template #type_transaction>
+        <ion-label class="labelone">{{infoMoeda.TipoTransacao}}</ion-label>
+      </ng-template>
+    </ion-item>
+    <p><span>Localidade:</span> {{infoMoeda.Localidade}}</p>
+    <p><span>Descrição:</span> {{infoMoeda.Descricao}}</p>
+    <p><span>Transação:</span> {{infoMoeda.TipoTransacao}}</p>
+    <p><span>Estado de conservação:</span> {{infoMoeda.EstadoConservacao}}</p>
+    <p><span>Quantidade:</span> {{infoMoeda.Qtd}}$</p>
+  </div>
+
+  <div class="twobuttons">
+    <!-- <ion-button
+      (click)="verPerfil(infoMoeda.colecionador_user)"
+      class="button"
+      expand="block"
+      >Ver perfil</ion-button
+    >
+    <ion-button
+      (click)="changepanel(infoMoeda.colecionador_nome)"
+      class="button"
+      expand="block"
+      >Contactar colecionador</ion-button
+    > -->
+  </div>
+</ion-content>

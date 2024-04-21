@@ -1,0 +1,76 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+
+  <ion-card class="custom-card">
+    <ion-card-content>
+      <div class="card-container">
+        <div><p class="user-name"><strong>Nome do Usuário</strong></p></div>  
+        <div class="image-container">
+          <img src="./assets/eu.png" alt="Imagem" class="round-image">
+          <div class="user-details" >
+            <p style="font-size: 16px;"><strong>Nome:</strong> Rodrigo</p>
+            <p style="font-size: 16px;"><strong>Email:</strong> email</p>
+          </div>
+        </div>  
+      </div>
+      <div class="icon-container">
+        <ion-icon name="server" class="clickable-icon"></ion-icon>
+        <ion-icon name="pencil-outline" class="clickable-icon"></ion-icon>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header >
+      <ion-card-title style="font-size: 26px; margin-top: 10px;">Biblioteca</ion-card-title>
+      <ion-button style="margin-top: -34px; margin-left: auto;" >
+        Partilha<ion-icon name="share-social"></ion-icon>
+      </ion-button>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start" style="width: 150px; height: 150px;">
+            <img src="./assets/eu.png" alt="Imagem">
+          </ion-thumbnail>
+          <ion-label>Item</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start" style="width: 150px; height: 150px;">
+            <img src="./assets/eu.png" alt="Imagem">
+          </ion-thumbnail>
+          <ion-label>Item</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start" style="width: 150px; height: 150px;">
+            <img src="./assets/eu.png" alt="Imagem">
+          </ion-thumbnail>
+          <ion-label>Item</ion-label>
+        </ion-item>
+  
+        <ion-item lines="none">
+          <ion-thumbnail slot="start" style="width: 150px; height: 150px;">
+            <img src="./assets/eu.png" alt="Imagem">
+          </ion-thumbnail>
+          <ion-label>Item</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
+  
+  
+  
+  
+  
+  
+</ion-content>
